@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zeitgeist – Datenschutzerklärung / Privacy Policy</title>
+<style>
+  :root {
+    --bg: #faf7f2;
+    --card: #ffffff;
+    --text: #2b2b2b;
+    --muted: #6b6b6b;
+    --accent: #b5651d;
+    --border: #e7e1d6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1b19;
+      --card: #262522;
+      --text: #ece8e1;
+      --muted: #a8a39a;
+      --accent: #e0975a;
+      --border: #3a3833;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; }
+  header.top { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 8px; }
+  h1 { font-size: 1.7rem; margin: 0; }
+  h2 { font-size: 1.2rem; margin: 36px 0 8px; }
+  h3 { font-size: 1rem; margin: 22px 0 6px; }
+  p, li { color: var(--text); }
+  .muted { color: var(--muted); font-size: 0.9rem; }
+  a { color: var(--accent); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 6px 24px 24px;
+    margin-top: 16px;
+  }
+  .toggle { display: inline-flex; border: 1px solid var(--border); border-radius: 999px; overflow: hidden; }
+  .toggle button {
+    border: none; background: transparent; color: var(--muted);
+    padding: 6px 16px; font-size: 0.9rem; cursor: pointer; font-weight: 600;
+  }
+  .toggle button.active { background: var(--accent); color: #fff; }
+  .lang { display: none; }
+  .lang.active { display: block; }
+  .highlight {
+    background: rgba(181,101,29,0.10);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px; padding: 12px 16px; margin: 16px 0;
+  }
+  table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 0.95rem; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  footer { margin-top: 40px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Zeitgeist</h1>
+    <div class="toggle" role="group" aria-label="Sprache / Language">
+      <button id="btn-de" class="active" onclick="setLang('de')">Deutsch</button>
+      <button id="btn-en" onclick="setLang('en')">English</button>
+    </div>
+  </header>
+
+  <!-- ===================== DEUTSCH ===================== -->
+  <section id="lang-de" class="lang active">
+    <div class="card">
+      <h2>Datenschutzerklärung</h2>
+      <p class="muted">Stand: [24. Juni 2026]</p>
+
+      <div class="highlight">
+        <strong>Kurzfassung:</strong> Zeitgeist sammelt keine personenbezogenen Daten und sendet
+        nichts an uns oder an Dritte. Alle deine Daten bleiben auf deinem Gerät und – falls du es
+        aktivierst – in deiner persönlichen iCloud. Wir haben keinen Zugriff darauf.
+      </div>
+
+      <h2>1. Verantwortlicher</h2>
+      <p>
+        Verantwortlich für die Datenverarbeitung im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:
+      </p>
+      <p>
+        Daniel Neugebauer<br>
+        <br>
+        <br>
+        <br>
+        E-Mail: anfragen.zeitgeist@gmail.com
+      </p>
+
+      <h2>2. Geltungsbereich</h2>
+      <p>
+        Diese Erklärung gilt für die App „Zeitgeist" (im Folgenden „die App") für iOS und macOS.
+        Sie beschreibt, welche Daten bei der Nutzung der App verarbeitet werden.
+      </p>
+
+      <h2>3. Daten, die in der App gespeichert werden</h2>
+      <p>
+        Die App ist ein Lern-Timer. Damit sie funktioniert, speichert sie folgende von dir selbst
+        eingegebene oder erzeugte Inhalte <strong>ausschließlich lokal auf deinem Gerät</strong>:
+      </p>
+      <table>
+        <thead><tr><th>Datenart</th><th>Zweck</th></tr></thead>
+        <tbody>
+          <tr><td>Lern-Sessions (Thema, Dauer, Datum)</td><td>Anzeige deiner Statistiken und deines Verlaufs</td></tr>
+          <tr><td>Themen/Fächer-Namen und -Farben</td><td>Strukturierung und Darstellung deiner Lernzeit</td></tr>
+          <tr><td>Lernziele (Tages-/Wochenziel)</td><td>Fortschrittsanzeige</td></tr>
+          <tr><td>Countdown-Ziele (Datum, optionaler Titel, z. B. „Prüfung")</td><td>Anzeige des Countdowns</td></tr>
+          <tr><td>Streak-/„Freeze"-Daten und App-Einstellungen</td><td>Streak-Berechnung und Personalisierung</td></tr>
+        </tbody>
+      </table>
+      <p class="muted">
+        Technisch werden diese Daten in einer lokalen Datenbank (SQLite) sowie in den
+        System-Einstellungen der App (UserDefaults) auf deinem Gerät abgelegt.
+      </p>
+
+      <h2>4. iCloud-Synchronisierung (optional)</h2>
+      <p>
+        Wenn du in deinem Gerät bei iCloud angemeldet bist und iCloud für die App aktiviert ist,
+        werden die unter Punkt 3 genannten Daten über Apples Dienst <strong>CloudKit</strong> in
+        deiner <strong>privaten iCloud</strong> gespeichert, damit sie zwischen deinen eigenen
+        Geräten synchron bleiben.
+      </p>
+      <p>
+        Diese Daten liegen in deinem persönlichen iCloud-Konto. Der Entwickler hat
+        <strong>keinen Zugriff</strong> auf diese Inhalte. Die Verarbeitung erfolgt durch Apple als
+        Anbieter von iCloud; es gilt die <a href="https://www.apple.com/legal/privacy/de-ww/" target="_blank" rel="noopener">Datenschutzrichtlinie von Apple</a>.
+        Du kannst die Synchronisierung jederzeit in den iCloud-Einstellungen deines Geräts deaktivieren.
+      </p>
+
+      <h2>5. Mitteilungen / Erinnerungen</h2>
+      <p>
+        Die App kann dir – nur mit deiner Erlaubnis – lokale Erinnerungen (Push-Mitteilungen) auf dem
+        Gerät anzeigen. Diese werden ausschließlich lokal auf deinem Gerät erzeugt und geplant; es
+        werden dafür keine Daten an einen Server übertragen. Du kannst Mitteilungen jederzeit in den
+        Geräteeinstellungen widerrufen.
+      </p>
+
+      <h2>6. Keine Datenerhebung, kein Tracking, keine Werbung</h2>
+      <p>
+        Die App enthält <strong>keine</strong> Analyse-, Tracking- oder Werbe-Werkzeuge von Dritten.
+        Es werden keine Nutzungs-, Standort- oder Gerätedaten an den Entwickler oder Dritte gesendet.
+        Es findet kein Tracking über Apps oder Websites hinweg statt (kein App Tracking / IDFA).
+        Es gibt kein Nutzerkonto und keine Registrierung.
+      </p>
+
+      <h2>7. Rechtsgrundlage</h2>
+      <p>
+        Soweit überhaupt eine Verarbeitung im Sinne der DSGVO stattfindet, beruht die lokale
+        Speicherung deiner Eingaben auf der Erfüllung der von dir gewünschten App-Funktion
+        (Art. 6 Abs. 1 lit. b DSGVO) bzw. auf deiner Einwilligung, etwa bei Mitteilungen und
+        iCloud-Sync (Art. 6 Abs. 1 lit. a DSGVO).
+      </p>
+
+      <h2>8. Speicherdauer</h2>
+      <p>
+        Deine Daten bleiben gespeichert, bis du sie in der App löschst oder die App von deinem Gerät
+        entfernst. Beim Löschen der App werden die lokal gespeicherten Daten entfernt. In iCloud
+        synchronisierte Daten kannst du über die iCloud-Verwaltung deines Geräts löschen.
+      </p>
+
+      <h2>9. Deine Rechte</h2>
+      <p>
+        Dir stehen nach der DSGVO die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der
+        Verarbeitung, Datenübertragbarkeit und Widerspruch zu. Da der Entwickler keine
+        personenbezogenen Daten erhebt oder speichert, kannst du diese Rechte in Bezug auf deine
+        Inhalte unmittelbar selbst ausüben, indem du die Daten in der App oder über iCloud bearbeitest
+        bzw. löschst. Du hast außerdem das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren.
+      </p>
+
+      <h2>10. Kinder</h2>
+      <p>
+        Die App richtet sich nicht gezielt an Kinder und erhebt wissentlich keine Daten von Kindern.
+      </p>
+
+      <h2>11. Änderungen dieser Erklärung</h2>
+      <p>
+        Wir können diese Datenschutzerklärung anpassen, etwa wenn sich die App ändert. Die jeweils
+        aktuelle Fassung ist unter dieser Adresse abrufbar.
+      </p>
+
+      <h2>12. Kontakt</h2>
+      <p>Bei Fragen zum Datenschutz erreichst du uns unter: anfragen.zeitgeist@gmail.com</p>
+    </div>
+  </section>
+
+  <!-- ===================== ENGLISH ===================== -->
+  <section id="lang-en" class="lang">
+    <div class="card">
+      <h2>Privacy Policy</h2>
+      <p class="muted">Last updated: [June 24, 2026]</p>
+
+      <div class="highlight">
+        <strong>In short:</strong> Zeitgeist does not collect any personal data and sends nothing to
+        us or to third parties. All your data stays on your device and — if you turn it on — in your
+        personal iCloud. We have no access to it.
+      </div>
+
+      <h2>1. Data Controller</h2>
+      <p>The party responsible for data processing under the General Data Protection Regulation (GDPR) is:</p>
+      <p>
+        Daniel Neugebauer<br>
+        <br>
+        <br>
+        <br>
+        Email: anfragen.zeitgeist@gmail.com
+      </p>
+
+      <h2>2. Scope</h2>
+      <p>
+        This policy applies to the app “Zeitgeist” (“the App”) for iOS and macOS. It describes which
+        data is processed when you use the App.
+      </p>
+
+      <h2>3. Data stored in the App</h2>
+      <p>
+        The App is a study timer. To work, it stores the following content that you enter or generate
+        <strong>solely locally on your device</strong>:
+      </p>
+      <table>
+        <thead><tr><th>Type of data</th><th>Purpose</th></tr></thead>
+        <tbody>
+          <tr><td>Study sessions (subject, duration, date)</td><td>Showing your statistics and history</td></tr>
+          <tr><td>Subject names and colors</td><td>Organizing and displaying your study time</td></tr>
+          <tr><td>Study goals (daily/weekly)</td><td>Progress display</td></tr>
+          <tr><td>Countdown targets (date, optional title, e.g. “Exam”)</td><td>Showing the countdown</td></tr>
+          <tr><td>Streak/“freeze” data and app settings</td><td>Streak calculation and personalization</td></tr>
+        </tbody>
+      </table>
+      <p class="muted">
+        Technically, this data is stored in a local database (SQLite) and in the app’s system
+        settings (UserDefaults) on your device.
+      </p>
+
+      <h2>4. iCloud sync (optional)</h2>
+      <p>
+        If you are signed in to iCloud on your device and iCloud is enabled for the App, the data
+        listed in section 3 is stored via Apple’s <strong>CloudKit</strong> service in your
+        <strong>private iCloud</strong> so it stays in sync across your own devices.
+      </p>
+      <p>
+        This data resides in your personal iCloud account. The developer has <strong>no access</strong>
+        to this content. Processing is carried out by Apple as the provider of iCloud; Apple’s
+        <a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank" rel="noopener">Privacy Policy</a>
+        applies. You can disable sync at any time in your device’s iCloud settings.
+      </p>
+
+      <h2>5. Notifications / Reminders</h2>
+      <p>
+        With your permission, the App can show local reminders (notifications) on your device. These
+        are generated and scheduled entirely locally; no data is transmitted to a server for this
+        purpose. You can revoke notifications at any time in your device settings.
+      </p>
+
+      <h2>6. No data collection, no tracking, no ads</h2>
+      <p>
+        The App contains <strong>no</strong> third-party analytics, tracking, or advertising tools.
+        No usage, location, or device data is sent to the developer or third parties. There is no
+        tracking across apps or websites (no App Tracking / IDFA). There is no user account and no
+        registration.
+      </p>
+
+      <h2>7. Legal basis</h2>
+      <p>
+        To the extent any processing under the GDPR takes place, local storage of your input is based
+        on providing the app functionality you requested (Art. 6(1)(b) GDPR) or on your consent, e.g.
+        for notifications and iCloud sync (Art. 6(1)(a) GDPR).
+      </p>
+
+      <h2>8. Retention</h2>
+      <p>
+        Your data is kept until you delete it in the App or remove the App from your device. Deleting
+        the App removes the locally stored data. Data synced to iCloud can be deleted via your
+        device’s iCloud management.
+      </p>
+
+      <h2>9. Your rights</h2>
+      <p>
+        Under the GDPR you have the rights of access, rectification, erasure, restriction of
+        processing, data portability, and objection. Because the developer does not collect or store
+        any personal data, you can exercise these rights regarding your content directly by editing or
+        deleting the data in the App or via iCloud. You also have the right to lodge a complaint with
+        a data protection supervisory authority.
+      </p>
+
+      <h2>10. Children</h2>
+      <p>The App is not directed at children and does not knowingly collect data from children.</p>
+
+      <h2>11. Changes to this policy</h2>
+      <p>
+        We may update this privacy policy, for example when the App changes. The current version is
+        always available at this address.
+      </p>
+
+      <h2>12. Contact</h2>
+      <p>For privacy questions, contact us at: anfragen.zeitgeist@gmail.com</p>
+    </div>
+  </section>
+
+  <footer class="muted">© <span id="year"></span> Daniel Neugebauer — Zeitgeist</footer>
+</div>
+
+<script>
+  function setLang(l) {
+    document.documentElement.lang = l;
+    document.getElementById('lang-de').classList.toggle('active', l === 'de');
+    document.getElementById('lang-en').classList.toggle('active', l === 'en');
+    document.getElementById('btn-de').classList.toggle('active', l === 'de');
+    document.getElementById('btn-en').classList.toggle('active', l === 'en');
+  }
+  // Sprache nach Browsereinstellung vorwählen
+  if ((navigator.language || 'de').slice(0,2) === 'en') setLang('en');
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
